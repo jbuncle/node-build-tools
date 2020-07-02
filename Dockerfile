@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
 	zip \
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
         gnupg \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 
 RUN apt-get update && apt-get install -y \
 	nodejs \
