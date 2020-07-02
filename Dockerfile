@@ -19,4 +19,4 @@ RUN apt-get update && apt-get install -y \
 RUN npm install -g less less-plugin-autoprefix less-plugin-clean-css \
     uglify-js \
     uglifycss \
-    autoprefixer
+    postcss-cli autoprefixer
